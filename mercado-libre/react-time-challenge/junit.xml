@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="4" time="2.253">
+  <testsuite name="Banking Transactions &lt;App/&gt;" errors="0" failures="4" skipped="0" timestamp="2022-08-14T10:39:17" time="1.75" tests="5">
+    <testcase classname="Banking Transactions &lt;App/&gt; check default/initial state of the application" name="Banking Transactions &lt;App/&gt; check default/initial state of the application" time="0.07">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;2019-11-29HACKERBANK1 BP DES: MERCH PMT ID:1358570Credit1520.34$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:0000232343Credit1000$12,234.452019-11-25HACKERBANK DES:DEBIT O ID: 0000987945787897987987Debit2450.45$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 33375894749Credit1985.4$12,234.452019-11-29HACKERBANK DES: DEBIT O ID:00097494729Credit564$12,234.452019-11-30CREDIT CARD PAYMENT ID: 222349083Debit1987$12,234.45&quot;
+Received: &quot;2019-11-29HACKERBANK1 BP DES: MERCH PMT ID:135857001520.34$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:000023234301000$12,234.452019-11-25HACKERBANK DES:DEBIT O ID: 000098794578789798798712450.45$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 3337589474901985.4$12,234.452019-11-29HACKERBANK DES: DEBIT O ID:00097494729Debit564$12,234.452019-11-30CREDIT CARD PAYMENT ID: 22234908311987$12,234.45&quot;
+    at Object.&lt;anonymous&gt; (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/src/test/App.test.js:12:42)
+    at Object.asyncJestTest (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check filter by date" name="Banking Transactions &lt;App/&gt; check filter by date" time="0.029">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;2019-11-29HACKERBANK1 BP DES: MERCH PMT ID:1358570Credit1520.34$12,234.452019-11-29HACKERBANK DES: DEBIT O ID:00097494729Credit564$12,234.45&quot;
+Received: &quot;2019-11-29HACKERBANK DES: DEBIT O ID:00097494729Debit564$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:000023234301000$12,234.452019-11-29HACKERBANK1 BP DES: MERCH PMT ID:135857001520.34$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 3337589474901985.4$12,234.452019-11-30CREDIT CARD PAYMENT ID: 22234908311987$12,234.452019-11-25HACKERBANK DES:DEBIT O ID: 000098794578789798798712450.45$12,234.45&quot;
+    at Object.&lt;anonymous&gt; (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/src/test/App.test.js:25:42)
+    at Object.asyncJestTest (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check sorting by amount" name="Banking Transactions &lt;App/&gt; check sorting by amount" time="0.018">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;2019-11-29HACKERBANK DES: DEBIT O ID:00097494729Credit564$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:0000232343Credit1000$12,234.452019-11-29HACKERBANK1 BP DES: MERCH PMT ID:1358570Credit1520.34$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 33375894749Credit1985.4$12,234.452019-11-30CREDIT CARD PAYMENT ID: 222349083Debit1987$12,234.452019-11-25HACKERBANK DES:DEBIT O ID: 0000987945787897987987Debit2450.45$12,234.45&quot;
+Received: &quot;2019-11-29HACKERBANK DES: DEBIT O ID:00097494729Debit564$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:000023234301000$12,234.452019-11-29HACKERBANK1 BP DES: MERCH PMT ID:135857001520.34$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 3337589474901985.4$12,234.452019-11-30CREDIT CARD PAYMENT ID: 22234908311987$12,234.452019-11-25HACKERBANK DES:DEBIT O ID: 000098794578789798798712450.45$12,234.45&quot;
+    at Object.&lt;anonymous&gt; (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/src/test/App.test.js:34:42)
+    at Object.asyncJestTest (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check filter by date and sorting by amount" name="Banking Transactions &lt;App/&gt; check filter by date and sorting by amount" time="0.02">
+      <failure>Error: expect(received).toEqual(expected) // deep equality
+
+Expected: &quot;2019-11-29HACKERBANK DES: DEBIT O ID:00097494729Credit564$12,234.452019-11-29HACKERBANK1 BP DES: MERCH PMT ID:1358570Credit1520.34$12,234.45&quot;
+Received: &quot;2019-11-29HACKERBANK DES: DEBIT O ID:00097494729Debit564$12,234.452019-12-01THE HACKERUNIVERSITY DES: CCD+ ID:000023234301000$12,234.452019-11-29HACKERBANK1 BP DES: MERCH PMT ID:135857001520.34$12,234.452019-12-03HACKERBANK INC. DES:CCD+ ID: 3337589474901985.4$12,234.452019-11-30CREDIT CARD PAYMENT ID: 22234908311987$12,234.452019-11-25HACKERBANK DES:DEBIT O ID: 000098794578789798798712450.45$12,234.45&quot;
+    at Object.&lt;anonymous&gt; (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/src/test/App.test.js:49:42)
+    at Object.asyncJestTest (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /home/epilef/workspace/interviews-chanllenges/mercado-libre/react-time/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)</failure>
+    </testcase>
+    <testcase classname="Banking Transactions &lt;App/&gt; check number of rows rendered" name="Banking Transactions &lt;App/&gt; check number of rows rendered" time="0.008">
+    </testcase>
+  </testsuite>
+</testsuites>
