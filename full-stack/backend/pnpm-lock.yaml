@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@types/body-parser':
+    specifier: ^1.19.5
+    version: 1.19.5
+  body-parser:
+    specifier: ^1.20.2
+    version: 1.20.2
   convert-csv-to-json:
     specifier: ^2.46.0
     version: 2.46.0
@@ -84,13 +90,11 @@ packages:
     dependencies:
       '@types/connect': 3.4.38
       '@types/node': 20.12.7
-    dev: true
 
   /@types/connect@3.4.38:
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
     dependencies:
       '@types/node': 20.12.7
-    dev: true
 
   /@types/cors@2.8.17:
     resolution: {integrity: sha512-8CGDvrBj1zgo2qE+oS3pOCyYNqCPryMWY2bGfwA0dcfopWGgxs+78df0Rs3rc9THP4JkOhLsAa+15VdpAqkcUA==}

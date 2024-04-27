@@ -1,3 +1,5 @@
-const DataBase: Array<Record<string,string>> = [];
+import { UserData } from "./types";
+
+const DataBase: UserData[] = [];
 
 export default DataBase
